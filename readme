@@ -1,0 +1,29 @@
+#Restapi for getting company name from https://macaddress.io/
+
+
+#input:
+""
+    We are taking input as mac address from user using commondline.
+    example: Please enter mac address to find company name associated with it.
+    Example input: 44:38:39:ff:ef:57
+""
+
+#Getting details from https://macaddress.io/ in json format we need to create api_key by siging up to https://macaddress.io/
+#which we can use to access the details about company in following json format.
+
+#All responses that we get will be in following json format:
+""
+    {'vendorDetails':
+        {'oui': '443839', 'isPrivate': False, 'companyName': 'Cumulus Networks, Inc', 'companyAddress': '650 Castro Street, suite 120-245 Mountain View CA 94041 US', 'countryCode': 'US'},
+     'blockDetails':
+        {'blockFound': True, 'borderLeft': '443839000000', 'borderRight': '443839FFFFFF', 'blockSize': 16777216, 'assignmentBlockSize': 'MA-L', 'dateCreated': '2012-04-08', 'dateUpdated': '2015-09-27'},
+      'macAddressDetails':
+        {'searchTerm': '44:38:39:ff:ef:57', 'isValid': True, 'virtualMachine': 'Not detected', 'applications': ['Multi-Chassis Link Aggregation (Cumulus Linux)'], 'transmissionType': 'unicast', 'administrationType': 'UAA', 'wiresharkNotes': 'No details', 'comment': ''}}
+""
+
+
+#Final output:
+""
+Example: Company name: 'Cumulus Networks, Inc'
+
+""
